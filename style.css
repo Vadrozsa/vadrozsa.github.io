@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+h1 {
+    font-family: 'Spicy Rice';
+    text-align: center;
+    font-weight: normal;
+    color: #274d27;
+    font-size: 3rem;
+    font-size: clamp(3rem, -1.0865384615384617rem + 17.435897435897434vw, 9.375rem);
+}
+
+h2 {
+    text-align: center;
+    background-color: #274d27;
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 0.45833333333333326rem + 4.444444444444445vw, 3.125rem);
+}
+h3, h2 {
+    color:#e3c25b;
+    font-family: 'Titillium Web';
+
+    
+}
+
+h3 {
+    font-size: 0.5rem;
+    font-size: clamp(0.5rem, -0.14102564102564108rem + 2.735042735042735vw, 1.5rem);
+}
+
+Body {
+    background-color:#e7edde;
+    font-family: 'Sipec Rice';
+    margin: 0;
+    padding: 0;
+       
+}
+
+p, ul {
+    font-size: 0.5rem;
+    font-size: clamp(0.5rem, 0.17948717948717946rem + 1.3675213675213675vw, 1rem); /*ez a clamp nem feltétlen jó mert túl tudja terhelni a mediat, inkabb @media*/
+}
+
+main{
+    border-style: solid;
+    border-color:#ffffff;
+    border-width: 50px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #ffffff;
+    max-width: 100%;
+    margin: 20px;
+    
+}
+
+p, h4, ul {
+    font-family: 'Titillium Web';
+}
+
+nav a:hover {
+    color:crimson;
+    text-decoration: none;
+}
+
+table{
+    margin:30px;
+    
+}
+
+td, th {
+    text-align: center;
+    border: 2px solid black;
+}
+
+img {
+    border-radius: 8px;
+
+  }
+
+.one {
+    padding: 20px;
+}
+
+.képek1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+.képek2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.herbs {
+    display: flex;
+    justify-content:center;
+    transform: scale(2);
+    transform-origin: center;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+img {
+    border: 3px solid #274d27; 
+}
+
+footer {
+    margin: 20px;
+}
+
+
+@media {
+    pictures /*ide még valmai alá valami hogy a képek kisebbedő és reszponzívak legyenek*/
+}
+
+/* Táblázat alapstílusok */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px;
+    border-collapse: collapse;
+}
+
+/* Cellák és fejléc stílusok */
+td, th {
+    text-align: center;
+    border: 2px solid black;
+    padding: 12px; /* Az általad megadott padding */
+    font-size: 18px; /* Megközelítőleg a kívánt méret */
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Görgethető táblázat kisebb képernyőkön */
+.herbs {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Kisebb kijelzőkre optimalizálás */
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 14px; /* Kisebb kijelzőkön kisebb betűméret */
+    }
+
+    th, td {
+        padding: 10px; /* Kisebb padding a kompaktabb megjelenésért */
+    }
+}
